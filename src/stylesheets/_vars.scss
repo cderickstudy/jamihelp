@@ -1,0 +1,229 @@
+$globeBlue: #69afe3;
+$darkerBlue: #247fc2;
+$globeYellow: #faec19;
+$globeGreen: #1f991b;
+$globeError: red;
+$globeGray: #ccc;
+$globeDarkGrey: #666;
+$globeLightGray: #f5f5f5;
+$globeBlack: #000;
+$globeWhite: #fff;
+
+.globePointer {
+  cursor: pointer;
+}
+
+.verticalCenter {
+  min-height: 100%;
+  min-height: calc(100vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.globeW50 {
+  min-width: 50%;
+}
+
+//text-colors
+.txtglobeBlue {
+  color: $globeBlue;
+}
+
+.txtBlackBlue {
+  color: $darkerBlue;
+}
+
+.txtDarkerBlue {
+  color: $globeBlue;
+}
+
+.txtglobeDarkGrey {
+  color: $globeDarkGrey;
+}
+
+.txtLightGray {
+  color: $globeLightGray;
+}
+
+.txtError {
+  color: $globeError;
+}
+
+.txtglobeWhite {
+  color: $globeWhite;
+}
+
+.txtglobeBlack {
+  color: $globeBlack;
+}
+
+// background colors
+.bgglobeBlue {
+  background-color: $globeBlue;
+}
+
+.bgglobeYellow {
+  background-color: $globeYellow;
+}
+
+.bgglobeGreen {
+  background-color: $globeGreen;
+}
+
+.bgglobeError {
+  background-color: $globeError;
+}
+
+.bgglobeGray {
+  background-color: $globeGray;
+}
+
+.bgglobeLightGray {
+  background-color: $globeLightGray;
+}
+
+.bgglobeBlack {
+  background-color: $globeBlack;
+}
+
+// font size
+.globeHigher {
+  font-size: 3rem;
+}
+
+.gcH1 {
+  font-size: 2.5rem;
+}
+
+.gcH2 {
+  font-size: 2rem;
+}
+
+.gcH3 {
+  font-size: 1.75rem;
+}
+
+.gcH4 {
+  font-size: 1.5rem;
+}
+
+.gcH5 {
+  font-size: 1.25rem;
+}
+
+.gcH6 {
+  font-size: 1rem;
+}
+
+.gcSmall {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 580px) {
+  .globeHigher {
+    font-size: 2rem;
+  }
+
+  .gcH1 {
+    font-size: 1.5rem;
+  }
+
+  .gcH2,
+  .gcH3 {
+    font-size: 1.25rem;
+  }
+}
+
+.statusPill {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 13px;
+  cursor: default;
+
+  &.ProdActive {
+    background-color: #3deb03;
+    color: black;
+  }
+
+  &.ProdReview {
+    background-color: #f7b406;
+    color: black;
+  }
+
+  &.ProdInactive {
+    background-color: #ccc;
+    color: black;
+  }
+
+  &.ProdDenied {
+    background-color: #ccc;
+    color: black;
+  }
+
+  &.ProdRejected {
+    background-color: #fd0303;
+    color: white;
+  }
+
+  &.ProdDeleted {
+    background-color: #000;
+    color: white;
+  }
+
+  &.ProdBlocked {
+    background-color: #000;
+    color: white;
+  }
+
+  &.ProdCollected {
+    background-color: #f005f8;
+    color: white;
+  }
+
+  &.Active {
+    background-color: #ffeb00;
+    color: black;
+  }
+
+  &.Agreed {
+    background-color: #ffeb00;
+    color: black;
+  }
+
+  &.Rented {
+    background-color: #3deb03;
+    color: black;
+  }
+
+  &.Returned {
+    background-color: #d3d3d3;
+    color: black;
+  }
+
+  &.Suspended {
+    background-color: rgb(36, 36, 36);
+    color: white;
+  }
+
+  &.Collected {
+    background-color: #ebf1fc;
+    color: black;
+  }
+
+  &.Feedback {
+    background-color: #ebf1fc;
+    color: black;
+  }
+
+  &.Cancelled {
+    background-color: #ccc;
+    color: white;
+  }
+
+  &.Denied {
+    background-color: #ccc;
+    color: white;
+  }
+}

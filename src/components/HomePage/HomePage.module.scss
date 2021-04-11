@@ -1,0 +1,8 @@
+.backGround {
+    background-color: lighten($color: rgb(196, 196, 196), $amount: 10);
+    min-height: 100vh;
+    .fileUpload {
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}

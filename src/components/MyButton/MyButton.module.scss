@@ -1,0 +1,56 @@
+@import '../../stylesheets/_vars.scss';
+
+.myButton {
+  padding: 12px 3rem;
+  color: $globeWhite;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $globeBlue;
+  border-radius: 50px;
+  border-color: transparent;
+
+  &:hover {
+    background-color: darken($color: $globeBlue, $amount: 10);
+  }
+
+  &.disabled {
+    background-color: #cacaca;
+    border-color: #cacaca;
+    cursor: default;
+
+    &:hover {
+      background-color: #cacaca;
+    }
+  }
+
+  &.altButton {
+    padding: 7px 3rem;
+    color: $globeBlue;
+    background-color: $globeWhite;
+    border: 3px solid $globeBlue;
+
+    &.disabled {
+      background-color: #cacaca;
+      border-color: #cacaca;
+      cursor: default;
+
+      &:hover {
+        background-color: #cacaca;
+      }
+    }
+
+    &:hover {
+      background-color: darken($color: $globeBlue, $amount: 10);
+      color: $globeWhite;
+      border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .gaiaButton {
+    width: 100%;
+  }
+}
